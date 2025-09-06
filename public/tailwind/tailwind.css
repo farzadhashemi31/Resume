@@ -1,0 +1,71 @@
+@import "tailwindcss";
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: vazir;
+    src: url(/public/VazirMedium/Vazirmatn-Medium.eot);
+    src: url(/public/VazirMedium/Vazirmatn-Medium.ttf);
+    src: url(/public/VazirMedium/Vazirmatn-Medium.woff);
+    src: url(/public/VazirMedium/Vazirmatn-Medium.woff2);
+}
+@layer{
+    .header{
+        @apply w-full h-[55px] md:h-[70px] border-b-[0.5px] border-gray-700 flex justify-center items-center
+    }
+
+    .myName{
+        @apply text-white font-bold w-[40%] md:pr-[50px] pr-2.5
+    }
+    .navBar{
+        @apply w-[60%] h-full flex justify-end items-center md:pl-[50px] pl-2.5
+    }
+    .profile{
+        @apply w-full md:h-[400px] flex  justify-center items-center  mt-3.5 flex-wrap h-[600px]
+        
+    }
+    .picture{
+        @apply md:w-[40%] md:h-full flex items-center md:justify-end  h-[300px] w-full justify-center 
+    }
+    .info{
+        @apply md:w-[60%]  md:h-full flex items-center md:justify-start justify-center flex-wrap md:py-[60px] w-full h-[200px]
+    }
+    .border{
+        @apply w-[280px] h-[280px] rounded-full border-4 border-[#ff6a3d]  flex items-center justify-center md:ml-[50px] 
+    }
+    .wraper{
+        @apply max-w-[1500px] mx-auto bg-[#181c23] font-[vazir] h-auto
+    }
+
+    .img{
+        @apply w-[90%] h-[90%] object-cover rounded-full border-4 border-[#24262f] 
+    }
+    .type{
+        @apply text-white md:text-5xl md:w-full h-[50px] w-[90%] text-3xl
+    }
+    .aboutme{
+        @apply w-full h-fit flex flex-wrap p-[10px] justify-center md:gap-[30px]
+    }
+    .skil{
+        @apply w-full h-[600px] flex justify-center items-center gap-3 flex-wrap md:w-[50%]
+    }
+    .skils{
+        @apply w-[50%] text-white flex justify-end items-center h-[40px] text-xl
+    }
+    .dot{
+        @apply text-9xl text-[#ff6a3d] text-center h-[40px]
+    }
+    .proj{
+        @apply w-full h-[800px] md:h-[350px]  mt-[40px]
+    }
+    .box{
+        @apply w-[90%] h-[220px] rounded-2xl bg-[#24262f] md:w-[30%] hover:bg-[#2A2E38] duration-300 md:h-[230px] mt-[10px] md:mt-[30px] p-[20px]
+    }
+    .box_contact{
+        @apply w-[90%] h-[160px] rounded-2xl bg-[#24262f] md:w-[30%] hover:bg-[#2A2E38] duration-300 md:h-[170px] mt-[10px] md:mt-[30px] p-[20px]
+    }
+    .svg-proj{
+        @apply w-[50px] h-[50px] bg-[#ff6a3d] rounded-xl flex items-center justify-center 
+    }
+
+}
