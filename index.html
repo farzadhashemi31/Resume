@@ -4,30 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./public/css/main.css">
-  <link rel="stylesheet" href="./public/css/setting.css">
+ 
   <title>Farzad Hashemi</title>
 </head>
-<body  class="wraper">
+<body  class="wraper overflow-x-clip">
   <main id="wraper" class="wraper">
-     <header class="header">
-        <h1 class="myName">Farzad Hashemi</h1>
-        <nav class="navBar">
+     <div class="fix_header">
+      <header class="header">
+        <h1 class="myName reveal from-right">Full Stack Developer</h1>
+        <nav class="navBar reveal from-top ">
           <ul class="flex md:gap-[50px] gap-3.5 text-sm text-white font-black">
-             <a href="#aboutme">درباره من</a>
-             <a href="#proj">پروژه ها</a>
-             <a href="#contact">تماس</a>
+             <a class="header_txt cursor-pointer">درباره من</a>
+             <a class="header_txt cursor-pointer">پروژه ها</a>
+             <a class="header_txt cursor-pointer">تماس</a>
           </ul>
         </nav>
       </header>
+     </div>
+      <div class="w-full h-[55px]"></div>
 
-      <div class="profile">
+      <div class="profile reveal from-right">
         <div class="picture">
           <div class="border">
             <img class="img " src="./public/img/profile/GitHubProfile.jpg" alt="">
           </div>
         </div>
 
-        <div class="info">
+        <div class="info reveal from-left">
           <h2 class="text-white text-4xl md:w-full font-bold w-[90%] ">سلام</h2>
           <h3 class="text-white text-3xl md:w-full font-bold w-[90%]">فرزاد هاشمی هستم</h3>
           <h3 id="typed" class="type"></h3>
@@ -37,14 +40,14 @@
 
       <hr class="w-full h-0.5 bg-gray-700 md:hidden">
 
-      <div class="aboutme" id="aboutme">
+      <div class="aboutme scrollTo reveal from-bottom">
         <h2 class="text-white w-full md:w-[15%] h-[60px] text-2xl font-black mt-[30px] text-center md:mt-[20px]">درباره من</h2>
         <p class="w-full text-gray-600 md:w-[40%] text-center">من فرزاد هاشمی، متولد ۱۳۸۲ و دانشجوی مهندسی کامپیوتر هستم. چند سالی است در حوزه برنامه‌نویسی فعالیت می‌کنم و تمام پروژه‌هایم را از ایده تا اجرا به‌صورت مستقل توسعه داده‌ام. تجربه کار در Front-end، Back-end  دارم و هدفم ساخت نرم‌افزارهایی با کیفیت فنی بالا و تجربه کاربری عالی است.
         </p>
 
-        <div class="skil ">
-          <h2 class="w-full text-2xl text-white mt-5 md:text-center text-center">توانایی ها</h2>
-        <div class="w-full flex  border-b-[1px] border-gray-800 max-w-[1000px]">
+        <div class="skil">
+          <h2 class="w-full text-2xl text-white mt-5 md:text-center text-center border-b-[1px] border-[#ff6a3d] max-w-[200px] ">Front-End Skils</h2>
+        <div class="w-full flex  border-b-[1px] border-gray-800 max-w-[1000px] reveal from-right">
             <div class="w-[50%] h-[40px] flex items-center justify-center">
              <p class="text-white text-xl">Css</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
@@ -54,7 +57,7 @@
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           </div>
-        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px]">
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-left">
            <div class="w-[50%] h-[40px] flex items-center justify-center">
              <p class="text-white text-xl">Boot-Strap</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
@@ -65,7 +68,7 @@
           </div>
          
           </div>
-        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px]">
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-right">
           <div class="w-[50%] h-[40px]  flex items-center justify-center">
             <p class="text-white text-xl">JQuary</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
@@ -75,40 +78,62 @@
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           </div>
-        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px]">
+          <h2 class="w-full text-2xl text-white mt-5 md:text-center text-center border-b-[1px] border-[#ff6a3d] max-w-[200px] reveal from-top">Back-End Skils</h2>
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-left ">
           <div class="w-[50%] h-[40px]  flex items-center justify-center">
-            <p class="text-white text-xl">Asp.Net Core</p>
+            <p class="text-white text-xl">Net.</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           <div class="w-[50%] h-[40px] flex items-center justify-center">
-             <p class="text-white text-xl">Net.</p>
+             <p class="text-white text-xl">#C</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           </div>
-        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px]">
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-right">
           <div class="w-[50%] h-[40px]  flex items-center justify-center">
             <p class="text-white text-xl">EF Core</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           <div class="w-[50%] h-[40px] flex items-center justify-center">
-             <p class="text-white text-xl">Docker</p>
+             <p class="text-white text-xl">Asp.Net MVC</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           </div>
-        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px]">
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-left">
+          <div class="w-[50%] h-[40px]  flex items-center justify-center">
+            <p class="text-white text-xl">Onion Architector</p>
+            <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
+          </div>
+          <div class="w-[50%] h-[40px] flex items-center justify-center">
+             <p class="text-white text-xl">Clean Architector</p>
+            <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
+          </div>
+          </div>
+          <h2 class="w-full text-2xl text-white mt-5 md:text-center text-center border-b-[1px] border-[#ff6a3d] max-w-[200px]">Devops & DB</h2>
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-left">
           <div class="w-[50%] h-[40px]  flex items-center justify-center">
             <p class="text-white text-xl">Sq Lite</p>
             <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
           </div>
           <div class="w-[50%] h-[40px] flex items-center justify-center">
-               <p class="text-white text-xl">Sql Server</p>
+               <p class="text-white text-xl text-left">Sql Server</p>
+               <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
+              </div>
+            </div>
+        <div class="w-full flex border-b-[1px] border-gray-800 max-w-[1000px] reveal from-right">
+          <div class="w-[50%] h-[40px]  flex items-center justify-center">
+            <p class="text-white text-xl">My Sql</p>
+            <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
+          </div>
+          <div class="w-[50%] h-[40px] flex items-center justify-center">
+               <p class="text-white text-xl">Docker</p>
                <p class="text-[#ff6a3d] text-6xl pb-[20px]">.</p>
               </div>
             </div>
        
           </div>
         </div>
-        <div class="proj" id="proj">
+        <div class="proj scrollTo">
             <h2 class="w-full text-white text-center text-2xl"> پروژه ها</h2>
             <div class="w-full h-[300px] flex justify-center items-center gap-5 flex-wrap mt-[20px] md:mt-0 md:h-[200px]">
                 <div class="box">
@@ -126,7 +151,7 @@
                   </div>
 
                   <div class="w-full h-[50px] flex items-center justify-center">
-                     <a class="w-[80%] h-[40px] bg-[#ff6a3d] rounded-2xl text-white font-bold text-center pt-2 hover:animate-pulse" href="https://housecoffe.ir/">برای مشاهده کلیک کنید</a>
+                     <a class="w-[80%] h-[40px] bg-[#ff6a3d] rounded-2xl text-white font-bold text-center pt-2 hover:animate-pulse" href="/menus.html">برای مشاهده کلیک کنید</a>
                   </div>
                 </div>
                 <div class="box">
@@ -154,15 +179,15 @@
                   </div>
                   </div>
                   <div class="w-full h-[40px] text-white text-xl font-bold mt-3.5">
-                    <p>پروژه مشابه سایت دیجیکالا</p>
+                    <p>سایت فروشگاهی</p>
                   </div>
 
                   <div class="w-full h-[30px] text-[#7b7f86]">
-                    <p>این سایت تنها روی سایز desktop کار میکند </p>
+                    <p>این سایت در دست ساخت و در حال تست میباشد</p>
                   </div>
 
                   <div class="w-full h-[50px] flex items-center justify-center">
-                     <a class="w-[80%] h-[40px] bg-[#ff6a3d] rounded-2xl text-white font-bold text-center pt-2 hover:animate-pulse" href="https://farzadhashemi.liara.run/">برای مشاهده کلیک کنید</a>
+                     <a class="w-[80%] h-[40px] bg-[#ff6a3d] rounded-2xl text-white font-bold text-center pt-2 hover:animate-pulse" href="http://amin-co.com/">برای مشاهده کلیک کنید</a>
                   </div>
                 </div>
                 
@@ -171,7 +196,7 @@
 
 
 
-         <div class="proj mt-[200px]" id="contact">
+         <div class="proj mt-[200px] scrollTo">
             <h2 class="w-full text-white text-center text-2xl">تماس با من</h2>
             <div class="w-full h-[300px] flex justify-center items-center gap-5 flex-wrap mt-[20px] md:mt-0 md:h-[200px] ">
                 <div class="box_contact">
@@ -251,6 +276,8 @@
         </div>
   </main>
   <script src="./public/js/main.js"></script>
+  <script src="./public/js/animation.js"></script>
+  <script src="./public/js/scroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
        
 

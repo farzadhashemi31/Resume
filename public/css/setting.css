@@ -1,0 +1,14 @@
+.reveal {
+  opacity: 0;
+  transform: none;
+}
+.reveal.from-left   { transform: translateX(-60px); }
+.reveal.from-right  { transform: translateX( 60px); }
+.reveal.from-bottom { transform: translateY( 20px); }
+.reveal.from-top    { transform: translateY(-20px); }
+
+.reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.6s ease, transform 1.5s ease;
+}

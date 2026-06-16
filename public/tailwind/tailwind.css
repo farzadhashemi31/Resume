@@ -9,9 +9,13 @@
     src: url(/public/VazirMedium/Vazirmatn-Medium.woff);
     src: url(/public/VazirMedium/Vazirmatn-Medium.woff2);
 }
-@layer{
+/* [#24262f] */
+@layer index{
     .header{
-        @apply w-full h-[55px] md:h-[70px] border-b-[0.5px] border-gray-700 flex justify-center items-center
+        @apply w-full h-[55px] md:h-[70px] border-b-[0.5px] border-gray-700 flex justify-center items-center fixed top-0 bg-[rgba(24,28,35,0.3)] backdrop-blur-sm mx-auto
+    }
+    .fix_header{
+        @apply w-full h-fit flex justify-center items-center
     }
 
     .myName{
@@ -69,3 +73,61 @@
     }
 
 }
+
+@layer menus{
+    
+    .menus_wraper{
+        @apply w-full h-fit min-h-dvh flex flex-wrap max-w-[1500px] mx-auto
+    }
+    .menus_header{
+        @apply w-full h-[80px] flex justify-center items-center text-4xl font-semibold text-[rgba(255,255,255,.6)] fixed backdrop-blur-sm bg-[rgba(24,28,35,0.5)] top-0
+    }
+    .menus_section{
+        @apply w-full h-fit min-h-[550px]  flex justify-center items-center flex-wrap mt-[50px] xl:gap-0 gap-6
+    }
+    .preview{
+        @apply w-full h-[45px] flex justify-center items-center z-50 -mt-[90px] xl:-mt-[105px]
+    }
+    .previewTxt{
+        @apply w-[150px] h-full font-bold text-2xl text-[rgba(255,255,255,.6)]  bg-[rgba(0,0,0,.2)] backdrop-blur-lg flex justify-center items-center rounded-t-xl
+    }
+    .describe_menu{
+        @apply min-w-[360px] w-[50%] text-center text-gray-400 font-medium text-lg font-[vazir]
+    }
+    .view_site_btn{
+        @apply w-[140px] h-[45px] rounded-3xl bg-[#ff6a3d] text-white font-bold cursor-pointer hover:-mt-1 hover:shadow-2xl hover:shadow-rose-400 duration-500 hover:bg-white hover:text-[#ff6a3d] flex justify-center items-center
+    }
+    
+}
+
+/* swiper setting */
+
+.swiper{
+  width: 95%;
+  max-width: 500px;
+  height: 240px;
+}
+
+.swiper-wrapper{
+  width: 100% !important;
+  height: inherit;
+}
+
+.swiper-slide{
+  width: 100% !important;
+  height: inherit;
+}
+
+.swiper-button-next , .swiper-button-prev  {
+  width: 25px !important;
+  height: 40px !important;
+  color: gray !important;
+  border: 1px solid gray;
+  padding: 7px !important;
+  border-radius: 99px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+  
+  
+}
+

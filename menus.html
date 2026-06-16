@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <title>Menus</title>
+</head>
+<body class="bg-[#181c23]">
+    <main class="menus_wraper">
+
+        <div class="w-full flex justify-center items-center h-fit z-50">
+            <h1 class="menus_header">MENUS WEBSITES</h1>
+        </div>
+        
+        <div class="w-full h-[40px]"></div>
+
+        
+
+        <section class="menus_section "> 
+            
+              <!-- swiper -->
+           <div class="swiper mySwiper ">
+               <div class="swiper-wrapper ">
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-16 at 10.28.33 pm.jpg" alt="">
+                </div>
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-16 at 10.28.50 pm.jpg" alt="">
+                </div>
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-16 at 10.29.15 pm.jpg" alt="">
+                </div>
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-16 at 10.29.29 pm.jpg" alt="">
+                </div>
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-17 at 1.30.50 am.jpg" alt="">
+                </div>
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-17 at 1.34.47 am.jpg" alt="">
+                </div>
+            
+                <div class="swiper-slide ">
+                  <img  class="w-full h-full object-cover rounded-2xl" src="./public/img/hc/Screenshot 2026-06-17 at 1.34.58 am.jpg" alt="">
+                </div>
+
+                  
+               </div>
+               
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              
+              
+           </div>
+           <div class="preview">
+                     <p class="previewTxt"> Preview </p>
+            </div>
+          <!-- end swiper -->
+
+          <div class="w-full h-fit flex justify-center items-center">
+            <p dir="rtl" class="describe_menu"> طراحی 0 تا 100 سایت منوی کافه به همراه پنل ادمین برای دسترسی و ایجاد تغییرات در تمامی ایتم ها از جمله دسته بندی ها ، محصولات ، زیر محصولات ، افزودنی های طبیعی ، افزودنی های شرکتی و تخفیف <br>
+              بخش Front-End با استفاده از tailwind و JavaScript پیاده سازی شده  <br>
+              بخش Back-end با استقاده از زبان C# در بستر .Net به همراه معماری MVC (بخش پیجر این سایت با کمک SignalR پیاده سازی شده)
+             </p>
+          </div>
+
+          <div class="w-full h-[50px] flex justify-center items-center gap-[50px]">
+            <a href="https://github.com/farzadhashemi31/House-Coffee" class="view_site_btn">GitHubs Code</a>
+            <a href="https://housecoffe.ir?table=10" class="view_site_btn">View Site</a>
+           
+          </div>
+        </section>
+
+
+    </main>
+
+    <!-- scropts -->
+     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+         <script>
+     var swiper = new Swiper(".mySwiper", {
+        pagination: {
+         el: ".swiper-pagination",
+          type: "fraction",
+          loap: "true"
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+       },
+      });
+    </script>
+</body>
+</html>
